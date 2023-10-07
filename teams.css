@@ -1,0 +1,89 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    background-color: black;
+    opacity: 1.0;
+    background-image: url(pictures/rb.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: azure;
+        text-transform: uppercase;
+    }
+
+    .navbar ul li::after {
+        content: '';
+        height: 3px;
+        width: 0%;
+        background: azure;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+
+    .navbar ul li:hover::after {
+        width: 100%;
+    }
+
+.team {
+    font-family:'Baskerville Old Face';
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+    .team ul {
+        position: relative;
+        width: 450px;
+        margin: 100px auto 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+        .team ul li {
+            font-family: 'Baskerville Old Face';
+            font-size: large;
+            display: flex;
+            background:azure;
+            opacity: .8;
+            padding: 10px 20px;
+            color: black;
+            margin: 5px auto;
+            transition: .5s;
+        }
+
+    .team center h1 {
+        font-family: Copperplate Gothic;
+        color:azure;
+    }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paddock>
+	<pass id='1'>
+		<first_name> Vivian </first_name>
+		<last_name> Grimaldi </last_name>
+		<email> vivi.grimaldi@gmail.com</email>
+		<access_level> VIP </access_level>
+	</pass>
+	<pass id='2'>
+		<first_name> Isabella </first_name>
+		<last_name> Myers </last_name>
+		<email>isa.myers@gmail.com</email>
+		<access_level> Paddock </access_level>
+	</pass>
+	<pass id='3'>
+		<first_name> Elijah </first_name>
+		<last_name> Cabot </last_name>
+		<email> eli.cabot@gmail.com</email>
+		<access_level> VIP </access_level>
+	</pass>
+	<pass id='4'>
+		<first_name> Theodore </first_name>
+		<last_name> Bonavich </last_name>
+		<email> theo.bonavich@gmail.com</email>
+		<access_level> Paddock </access_level>
+	</pass>
+	<pass id='5'>
+		<first_name> Evelyn </first_name>
+		<last_name> Hawthorne </last_name>
+		<email> eve.hawthorne@gmail.com</email>
+		<access_level> Media </access_level>
+	</pass>
+</paddock>

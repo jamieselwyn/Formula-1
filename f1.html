@@ -1,0 +1,136 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title >Paddock Pass</title>    
+    <style type="text/css">
+
+        body {
+            font-family: Calibri;
+            width: 100%;
+            height: 100vh;
+            background-image: url(pictures/rd.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat:no-repeat;
+        } 
+        body center h1{
+            background-color: azure;
+        }
+        input[type="text"] {    
+            width: 250px;    
+        }    
+        input[type="submit"], input[type="reset"] {    
+            width: 77px;    
+            height: 27px;    
+            position: relative;left: 180px;    
+        }    
+        form{    
+            text-align: center;    
+            font-family: Calibri;    
+            font-size: 20px;    
+            border: 3px solid black;    
+            width: 600px;    
+            margin: 20px auto; 
+            color:azure;
+            
+        }    
+        td {    
+            padding: 10px;    
+        }    
+        td:first-child {    
+            text-align: right;    
+            font-weight: bold;    
+        }
+        td:last-child {
+                text-align: left;
+         }
+            td a {
+                text-decoration: none;
+                color: crimson;
+                text-transform: uppercase;
+            }
+    </style>    
+    <script>    
+        function validate() {    
+            var fname = document.reg_form.fname;    
+            var lname = document.reg_form.lname;    
+            var email = document.reg_form.email;
+            var access_level = document.reg_form.access_level;    
+                
+    
+            if (fname.value.length <= 0) {    
+                alert("First Name is required");    
+                fname.focus();    
+                return false;    
+            }    
+            if (lname.value.length <= 0) {    
+                alert("Last Name is required");    
+                lname.focus();    
+                return false;    
+            }    
+            if (email.value.length <= 0) {    
+                alert("Email Id is required");    
+                email.focus();    
+                return false;    
+            }    
+            if (access .value.length <= 0) {    
+                alert("Access level is required");
+                access_level.focus();    
+                return false;    
+            }    
+            return false;    
+        }    
+    </script>    
+</head>    
+<body>    
+    <center><h1>Paddock Pass</h1></center>    
+    <hr>    
+    <form method="post" action="" name="reg_form" onsubmit="return validate()">    
+        <h2>Paddock Access</h2>    
+        <table>
+            <tr>
+                <td><label>First Name: </label></td>
+                <td>
+                    <input type="text" name="fname" placeholder="First Name">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Last Name: </label></td>
+                <td>
+                    <input type="text" name="lname" placeholder="Last Name">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Email Id: </label></td>
+                <td>
+                    <input type="text" name="email" placeholder="example@gmail.com">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Access Level </label></td>
+                <td>
+                    <select name="access_level">
+                        <option value="access level">Access </option>
+                        <option value="Paddock">Paddock</option>
+                        <option value="VIP">VIP</option>
+                        <option value="Media">Media</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="reset" value="Reset">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="I:\My Drive\F1 Project\home.html">HOME</a>
+                </td>
+            </tr>
+        </table>    
+    </form>    
+</body>    
+</html>     
+
+ 
